@@ -3,14 +3,13 @@ Codeigniter Kütüphanesinde Kullanabileceğiniz Google Recaptcha Sistemi
 
 # Hesap Oluşturma
 Google hesabınız ile aşağıdaki bağlantıda üyelik oluşturup site bilgileri girildikten sonra karşınıza 2 adet kod gelecektir. Birincisi Site anahtarı ikincisi gizli anahtar.
-Kayıt : https://www.google.com/recaptcha/intro/v3.html
-
+	https://www.google.com/recaptcha/intro/v3.html
 # Config
 Kşağıdaki kodlar config.php dosyasının en altına eklenir. Bu kodları isterseniz admin panelinizden de yönetecek şekilde ayarlayabilirsiniz. Bir önceki işlemde kayıt olduğumuzda bize verilen kodları burada ilgili yerlere ekliyoruz.
 
-$config['google_key'] = 'Site Anahtarı';
+	$config['google_key'] = 'Site Anahtarı';
 
-$config['google_secret'] = 'Gizli Anahtar';
+	$config['google_secret'] = 'Gizli Anahtar';
 
 # Helper
 İşlemi en basit şekilde kullanabilmek için helperda fonksiyon tanımlıyoruz. 
