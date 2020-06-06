@@ -9,6 +9,7 @@ Kayıt : https://www.google.com/recaptcha/intro/v3.html
 Kşağıdaki kodlar config.php dosyasının en altına eklenir. Bu kodları isterseniz admin panelinizden de yönetecek şekilde ayarlayabilirsiniz. Bir önceki işlemde kayıt olduğumuzda bize verilen kodları burada ilgili yerlere ekliyoruz.
 
 $config['google_key'] = 'Site Anahtarı';
+
 $config['google_secret'] = 'Gizli Anahtar';
 
 # Helper
