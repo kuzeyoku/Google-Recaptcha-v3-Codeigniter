@@ -30,7 +30,7 @@ Kşağıdaki kodlar config.php dosyasının en altına eklenir. Bu kodları iste
 	    }
 	}
 
-Fonksiyon formdan gelen doğrulama anahtarını gönderdiğimizde bize true yada false şeklinde cevap verecek. Burada 2 veri var birincisi formdan gelen anahtar, diğeride config.php dosyamızdan gelen $CI->config->item("google_secret") gizli anahtar. İlgili tanımlamaları yaptık herşey hazır.
+Fonksiyon formdan gelen doğrulama anahtarını gönderdiğimizde bize true yada false şeklinde cevap verecek. Kriterimiz sorgunun başarılı olması ve doğrulama puanının 0.5 yada daha büyük olması. 0.5 değerini değiştirebilir yada iptal edebilirsiniz. Burada 2 veri var birincisi formdan gelen anahtar, diğeride config.php dosyamızdan gelen $CI->config->item("google_secret") gizli anahtar. İlgili tanımlamaları yaptık herşey hazır.
 
 # Views 
 Fonksiyonu kullanabilmek için elimizde bir veri olması gerek ve bu sistemi sayfamıza dahil etmeliyiz. İlgili views de head ve footer kısmına eklenecek kodlar aşağıdaki şekilde.
