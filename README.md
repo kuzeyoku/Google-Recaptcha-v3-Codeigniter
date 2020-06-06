@@ -53,7 +53,7 @@ Yine burada $this->config->item("google_key") değeri config.php den çekiliyor.
 
 Aynı şekilde burdada $this->config->item("google_key") değerini config.php den alıp id'si 'googleRecaptcha' olan gizli inputa doğrulama anahtarını value olarak eklemiş oluyoruz.
 
-<form action="<?php echo base_url('test/control') ?>">
+<form action="/test/control" method="post">
 
 		<label for="username">Kullanıcı Adı</label>
 
