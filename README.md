@@ -41,15 +41,15 @@ Head kısmına eklenecek kod;
 Yine burada $this->config->item("google_key") değeri config.php den çekiliyor.
 Footer kısmına eklenecek kod;
 
-		<script>
-			grecaptcha.ready(function() {
-				grecaptcha.execute('<?php echo $this->config->item("google_key") ?>', {action: 'action_name'})
-				.then(function(token) {
-					var googleRecaptcha = document.getElementById('googleRecaptcha');
-					googleRecaptcha.value = token;
-				});
+	<script>
+		grecaptcha.ready(function() {
+			grecaptcha.execute('<?php echo $this->config->item("google_key") ?>', {action: 'action_name'})
+			.then(function(token) {
+				var googleRecaptcha = document.getElementById('googleRecaptcha');
+				googleRecaptcha.value = token;
 			});
-		</script>
+		});
+	</script>
 
 Aynı şekilde burdada $this->config->item("google_key") değerini config.php den alıp id'si 'googleRecaptcha' olan gizli inputa doğrulama anahtarını value olarak eklemiş oluyoruz.
 
